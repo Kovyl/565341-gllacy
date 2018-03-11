@@ -76,39 +76,64 @@
       </section>
       <p class="main-header__time">С 10 до 20, ежедневно</p>
       <p class="main-header__number">8 812 450-25-25</p>
-
-      <section class="main-header__slider">
-        <div class="slides">
-          <div class="slides__item">
-            <h2 class="slides__title">Крем-брюле и пломбир с малиновым джемом</h2>
-            <a class="btn slides__btn" href="#">Давайте оба!</a>
-          </div>
-
-          <div class="slides__item">
-            <h2 class="slides__title">Шоколадный пломбир и лимонный сорбет</h2>
-            <a class="btn slides__btn" href="#">Давайте оба!</a>
-          </div>
-
-          <div class="slides__item">
-            <h2 class="slides__title">Пломбир с помадкой и клубничный щербет</h2>
-            <a class="btn slides__btn" href="#">Давайте оба!</a>
-          </div>
-        </div>
-        <i class="slider__inner slider__inner--active">&bull;</i>
-        <i class="slider__inner">&bull;</i>
-        <i class="slider__inner">&bull;</i>
-      </section>
     </header>
     <main>
-      <section class="banners">
-        <article class="banner banner--raspberry">
-          <h3 class="banner__title">Малинка даром!</h3>
-          <p class="banner__content">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        </article>
-        <article class="banner banner--chocolate">
-          <h3 class="banner__title">Шоколадки даром!</h3>
-          <p class="banner__content">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-        </article>
+      <ul class="breadcrumb">
+        <li class="breadcrumb__item"><a href="#">Главная </a></li>
+        <li class="breadcrumb__item"><a href="#">Каталог </a></li>
+        <li class="breadcrumb__item"><a>Сливочное</a></li>
+      </ul>
+      <h1>Сливочное мороженое</h1>
+      <section class="filters">
+        <form action="https://htmlacademy.ru" method="post">
+          <p class="select">
+            <h4 class="select__title">Сортировка:</h4>
+            <label class="visually-hidden" for="filters-select">Регулировка цены</label>
+            <select class="select__list" name="sort" id="filters-sort">
+              <option class="select__item" value="on-popularity">по популярности</option>
+              <option class="select__item" value="first-cheap">сначала недорогие</option>
+              <option class="select__item" value="first-expensive">сначала дорогие</option>
+              <option class="select__item" value="of-fat">по жирности</option>
+            </select>
+          </p>
+          <p class="range">
+            <label class="visually-hidden" for="filters-range">Регулировка цены</label>
+            <h4>Цена: 100 руб. – 500 руб.</h4>
+            <input type="range" name="range" id="filters-range">
+          </p>
+          <p class="radio">
+            <h4 class="radio__title">Жирность:</h4>
+            <input type="radio" name="filters-radio" id="filters-radio-zero-percent">
+            <label for="filters-radio-zero-percent">0%</label>
+
+            <input type="radio" name="filters-radio" id="filters-radio-to-ten-percent">
+            <label for="filters-radio-to-ten-percent">до 10%</label>
+
+            <input type="radio" name="filters-radio" id="filters-radio-to-thirty-percent">
+            <label for="filters-radio-to-thirty-percent">до 30%</label>
+
+            <input type="radio" name="filters-radio" id="filters-radio-more-thirty-percent">
+            <label for="filters-radio-more-thirty-percent">выше 30%</label>
+          </p>
+          <p class="checkbox">
+            <h4 class="checkbox__title">Наполнители:</h4>
+            <input type="checkbox" name="chocolate" id="checkbox-chocolate">
+            <label for="checkbox-chocolate">шоколадные</label>
+
+            <input type="checkbox" name="sugar-powder" id="checkbox-sugar-powder">
+            <label for="checkbox-sugar-powder">сахарные присыпки</label>
+
+            <input type="checkbox" name="fruits" id="checkbox-fruits">
+            <label for="checkbox-fruits">фрукты</label>
+
+            <input type="checkbox" name="syrups" id="checkbox-syrups">
+            <label for="checkbox-syrups">сиропы</label>
+
+            <input type="checkbox" name="jams" id="checkbox-jams">
+            <label for="checkbox-jams">джемы</label>
+          </p>
+          <button class="filters__btn">Применить</button>
+        </form>
       </section>
 
       <section class="product">
@@ -136,38 +161,66 @@
           <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
           <a class="btn" href="#">Быстрый просмотр</a>
         </div>
+        <div class="product__item">
+          <img src="img/icecream-5.jpg" alt="Сливочное с брусничным джемом">
+          <p><b>325 &#8381;</b><span class="small-font">/кг</span></p>
+          <a href="#">Сливочное с брусничным джемом</a>
+          <a class="btn" href="#">Быстрый просмотр</a>
+        </div>
+        <div class="product__item">
+          <img src="img/icecream-6.jpg" alt="Сливочно-черничное с цельными ягодами черники">
+          <p><b>410 &#8381;</b><span class="small-font">/кг</span></p>
+          <a href="#">Сливочно-черничное с цельными ягодами черники</a>
+          <a class="btn" href="#">Быстрый просмотр</a>
+        </div>
+        <div class="product__item">
+          <img src="img/icecream-7.jpg" alt="Сливочно-лимонное с карамельной присыпкой">
+          <p><b>375 &#8381;</b><span class="small-font">/кг</span></p>
+          <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
+          <a class="btn" href="#">Быстрый просмотр</a>
+        </div>
+        <div class="product__item">
+          <img src="img/icecream-8.jpg" alt="Сливочное с шоколадной стружкой">
+          <p><b>320 &#8381;</b><span class="small-font">/кг</span></p>
+          <a href="#">Сливочное с шоколадной стружкой</a>
+          <a class="btn" href="#">Быстрый просмотр</a>
+        </div>
+        <div class="product__item">
+          <img src="img/icecream-9.jpg" alt="Сливочно-ванильное с кусочками шоколада">
+          <p><b>440 &#8381;</b><span class="small-font">/кг</span></p>
+          <a href="#">Сливочно-ванильное с кусочками шоколада</a>
+          <a class="btn" href="#">Быстрый просмотр</a>
+        </div>
+        <div class="product__item">
+          <img src="img/icecream-10.jpg" alt="Сливочноe с ментоловым сиропом">
+          <p><b>435 &#8381;</b><span class="small-font">/кг</span></p>
+          <a href="#">Сливочноe с ментоловым сиропом</a>
+          <a class="btn" href="#">Быстрый просмотр</a>
+        </div>
+        <div class="product__item">
+          <img src="img/icecream-11.jpg" alt="Сливочное с кусочками черного шоколада">
+          <p><b>435 &#8381;</b><span class="small-font">/кг</span></p>
+          <a href="#">Сливочное с кусочками черного шоколада</a>
+          <a class="btn" href="#">Быстрый просмотр</a>
+        </div>
+        <div class="product__item">
+          <img src="img/icecream-12.jpg" alt="Сливочное с мятным сиропом">
+          <p><b>420 &#8381;</b><span class="small-font">/кг</span></p>
+          <a href="#">Сливочное с мятным сиропом</a>
+          <a class="btn" href="#">Быстрый просмотр</a>
+        </div>
       </section>
 
-      <section class="advantages">
-        <h3 class="advantages__title">Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
-        <p class="advantages__item advantages__item--icecream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-        <p class="advantages__item advantages__item--eco">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </p>
-        <p class="advantages__item advantages__item--cow">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-        <p class="advantages__item advantages__item--thermopak">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
-      </section>
-
-      <section class="group-box">
-        <article class="news">
-          <h4 class="news__title">Новое в нашем блоге</h4>
-          <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
-        </article>
-        <article class="subscribe">
-          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <label class="visually-hidden" for="subscribe-email"></label>
-            <input class="subscribe__mail" type="email" name="email" id="subscribe-email">
-            <button class="btn subscribe__btn"></button>
-          </form>
-        </article>
+      <section class="page-control">
+        <a class="page-control__item">&#60;</a>
+        <a class="page-control__item">1</a>
+        <a class="page-control__item" href="#">2</a>
+        <a class="page-control__item" href="#">3</a>
+        <a class="page-control__item" href="#">4</a>
+        <a class="page-control__item" href="#">5</a>
+        <a class="page-control__item" href="#">&#62;</a>
       </section>
     </main>
-    <section class="map">
-      <div class="contacts">
-        <p class="contacts__address">Адрес главного офиса и офлайн-магазина:<b class="text-bold">ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
-        <p class="contacts__tel">Для заказов по телефону:<b class="text-bold">8 812 450-25-25</b>(с 10 до 20 ежедневно)</p>
-        <a href="#" class="btn contacts__btn">Форма обратной связи</a>
-      </div>
-    </section>
 
     <footer class="main-footer">
       <div class="social">
